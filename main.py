@@ -51,7 +51,7 @@ def choice_line(x):
 def player_input(symbol):
     while True:
         player_value = input("Введите через пробел строку и колонку, куда хотите поставить: " + symbol + "\n")
-        if len(player_value) < 3:
+        if len(player_value) != 3:
             print("Ошибка!")
             continue
         if not ((player_value[0] in "123") and (player_value[2] in "123")):
